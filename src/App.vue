@@ -2,7 +2,7 @@
 	<div id="app">
 		<Header />
 		<PostsHeader />
-		<Posts />
+		<router-view class="view"></router-view>
 		<Footer />
 	</div>
 </template>
@@ -10,7 +10,6 @@
 <script>
 import Header from './components/Header.vue'
 import PostsHeader from './components/partials/PostsHeader.vue'
-import Posts from './components/Posts.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -18,7 +17,6 @@ export default {
 	components: {
 		Header,
 		PostsHeader,
-		Posts,
 		Footer
 	}
 }
